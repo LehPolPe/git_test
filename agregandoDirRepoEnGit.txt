@@ -1,0 +1,434 @@
+usr@lepolpe-lab:~$ git status
+fatal: no es un repositorio git (ni ninguno de los directorios superiores): .git
+usr@lepolpe-lab:~$ ls
+Descargas   Escritorio  gthbtkn   Música            Plantillas  snap
+Documentos  git         Imágenes  NetBeansProjects  Público     Vídeos
+usr@lepolpe-lab:~$ cd NetBeansProjects/
+usr@lepolpe-lab:~/NetBeansProjects$ ls
+centiAFahren     eureka     largo8      parOImpar      sumaDosNumeros
+dobleTripleRaiz  javaIntro  mayorDeDos  primeraLetraA  upperLowerFrase
+usr@lepolpe-lab:~/NetBeansProjects$ git push
+fatal: no es un repositorio git (ni ninguno de los directorios superiores): .git
+usr@lepolpe-lab:~/NetBeansProjects$ cd git
+bash: cd: git: No existe el archivo o el directorio
+usr@lepolpe-lab:~/NetBeansProjects$ cd..
+cd..: no se encontró la orden
+usr@lepolpe-lab:~/NetBeansProjects$ cd ..
+usr@lepolpe-lab:~$ cd git
+usr@lepolpe-lab:~/git$ ls
+egg  git_test  MiPrimerRepositorio  odin-recipes
+usr@lepolpe-lab:~/git$ cd egg
+usr@lepolpe-lab:~/git/egg$ ls
+NetBeansProjects
+usr@lepolpe-lab:~/git/egg$ cd Net
+bash: cd: Net: No existe el archivo o el directorio
+usr@lepolpe-lab:~/git/egg$ cd NetBeansProjects/
+usr@lepolpe-lab:~/git/egg/NetBeansProjects$ ls
+centiAFahren     javaIntro   parOImpar       upperLowerFrase
+dobleTripleRaiz  mayorDeDos  sumaDosNumeros
+usr@lepolpe-lab:~/git/egg/NetBeansProjects$ git status
+En la rama main
+Tu rama está basada en 'origin/main', pero upstream ha desaparecido.
+  (usa "git branch --unset-upstream" para arreglar)
+
+nada para hacer commit, el árbol de trabajo está limpio
+usr@lepolpe-lab:~/git/egg/NetBeansProjects$ git branch --unser-upstream
+error: opción `unser-upstream' desconocida
+uso: git branch [<opciones>] [-r | -a] [--merged] [--no-merged]
+   o: git branch [<options>] [-f] [--recurse-submodules] <branch-name> [<start-point>]
+   o: git branch [<options>] [-l] [<pattern>...]
+   o: git branch [<opciones>] [-r] (-d | -D) <nombre-de-rama>...
+   o: git branch [<opciones>] (-m | -M) [<rama-vieja>] <rama-nueva>
+   o: git branch [<opciones>] (-c | -C) [<rama-vieja>] <rama-nueva>
+   o: git branch [<opciones>] [-r | -a] [--points-at]
+   o: git branch [<opciones>] [-r | -a] [--formato]
+
+Opciones genéricas
+    -v, --verbose         mostrar hash y tema, dar dos veces para rama upstream
+    -q, --quiet           suprimir mensajes informativos
+    -t, --track[=(direct|inherit)]
+                          set branch tracking configuration
+    -u, --set-upstream-to <upstream>
+                          cambiar info de upstream
+    --unset-upstream      desconfigurar la info de upstream
+    --color[=<cuando>]    usar salida con colores
+    -r, --remotes         actuar en ramas de rastreo remoto
+    --contains <confirmar>
+                          mostrar solo ramas que contengan el commit
+    --no-contains <confirmar>
+                          mostrar solo ramas que no contengan el commit
+    --abbrev[=<n>]        usar <n> cifras para mostrar los nombres de los objetos
+
+Acciones específicas de git-branch:
+    -a, --all             listar ramas de remote-tracking y locales
+    -d, --delete          borrar ramas totalmente fusionadas
+    -D                    borrar rama (incluso si no está fusionada)
+    -m, --move            mover/renombrar una rama y su reflog
+    -M                    mover/renombrar una rama, incluso si el destino existe
+    -c, --copy            copiar una rama y su reflog
+    -C                    copiar una rama, incluso si el destino existe
+    -l, --list            listar nombres de ramas
+    --show-current        mostrar el nombre de branch actual
+    --create-reflog       crear el reflog de la rama
+    --edit-description    editar la descripción de la rama
+    -f, --force           forzar la creación, movimiento/renombramiento, eliminación
+    --merged <confirmar>  mostrar solo ramas que hayan sido fusionadas
+    --no-merged <confirmar>
+                          mostrar solo ramas que no han sido fusionadas
+    --column[=<estilo>]   mostrar las ramas en columnas
+    --sort <clave>        nombre del campo por el cuál ordenar
+    --points-at <objeto>  imprimir solo las ramas del objeto
+    -i, --ignore-case     ordenamiento y filtración son case-insensitive
+    --recurse-submodules  recurrir a través de submódulos
+    --format <formato>    formato para usar para el output
+
+usr@lepolpe-lab:~/git/egg/NetBeansProjects$ git branch --unset-upstream
+usr@lepolpe-lab:~/git/egg/NetBeansProjects$ git status
+En la rama main
+nada para hacer commit, el árbol de trabajo está limpio
+usr@lepolpe-lab:~/git/egg/NetBeansProjects$ cp -R ~/NetBeansProjects/ ~/git/egg/NetBeansProjects/
+usr@lepolpe-lab:~/git/egg/NetBeansProjects$ git status
+En la rama main
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que se será confirmado)
+	NetBeansProjects/
+
+no hay nada agregado al commit pero hay archivos sin seguimiento presentes (usa "git add" para hacerles seguimiento)
+usr@lepolpe-lab:~/git/egg/NetBeansProjects$ add .
+Orden «add» no encontrada. Quizá quiso decir:
+  la orden «hadd» del paquete snap «root-framework (v6-28-00)»
+  la orden «adb» del paquete deb «adb (1:29.0.6-18ubuntu1)»
+  la orden «pdd» del paquete deb «pdd (1.5-1)»
+  la orden «axd» del paquete deb «afnix (3.5.0-3)»
+  la orden «adr» del paquete deb «adr-tools (3.0.0-2)»
+  la orden «tdd» del paquete deb «devtodo (0.1.20+git20200830.0ad52b0-1)»
+  la orden «ldd» del paquete deb «libc-bin (2.35-0ubuntu3)»
+  la orden «aid» del paquete deb «id-utils (4.6.28-20200521ss15dab)»
+  la orden «ddd» del paquete deb «ddd (1:3.3.12-5.3build1)»
+  la orden «ad» del paquete deb «netatalk (3.1.13~ds-2)»
+  la orden «atd» del paquete deb «at (3.2.5-1ubuntu1)»
+  la orden «and» del paquete deb «and (1.2.2-4.2)»
+  la orden «dd» del paquete deb «coreutils (8.32-4.1ubuntu1)»
+Consulte «snap info <nombre del snap>» para ver más versiones.
+usr@lepolpe-lab:~/git/egg/NetBeansProjects$ git add .
+usr@lepolpe-lab:~/git/egg/NetBeansProjects$ git commit -m "se agregan nuevos ejercicios java y se evoluciona favorablemente en la comprensión del lenguaje"
+[main aee3a5e] se agregan nuevos ejercicios java y se evoluciona favorablemente en la comprensión del lenguaje
+ 70 files changed, 400 insertions(+)
+ create mode 100644 NetBeansProjects/NetBeansProjects/centiAFahren/pom.xml
+ create mode 100644 NetBeansProjects/NetBeansProjects/centiAFahren/src/main/java/lepolpelab/centiafahren/CentiAFahren.java
+ create mode 100644 NetBeansProjects/NetBeansProjects/centiAFahren/target/classes/.netbeans_automatic_build
+ create mode 100644 NetBeansProjects/NetBeansProjects/centiAFahren/target/classes/lepolpelab/centiafahren/CentiAFahren.class
+ create mode 100644 NetBeansProjects/NetBeansProjects/centiAFahren/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+ create mode 100644 NetBeansProjects/NetBeansProjects/centiAFahren/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+ create mode 100644 NetBeansProjects/NetBeansProjects/centiAFahren/target/test-classes/.netbeans_automatic_build
+ create mode 100644 NetBeansProjects/NetBeansProjects/dobleTripleRaiz/pom.xml
+ create mode 100644 NetBeansProjects/NetBeansProjects/dobleTripleRaiz/src/main/java/lepolpelab/dobletripleraiz/DobleTripleRaiz.java
+ create mode 100644 NetBeansProjects/NetBeansProjects/dobleTripleRaiz/target/classes/.netbeans_automatic_build
+ create mode 100644 NetBeansProjects/NetBeansProjects/dobleTripleRaiz/target/classes/lepolpelab/dobletripleraiz/DobleTripleRaiz.class
+ create mode 100644 NetBeansProjects/NetBeansProjects/dobleTripleRaiz/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+ create mode 100644 NetBeansProjects/NetBeansProjects/dobleTripleRaiz/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+ create mode 100644 NetBeansProjects/NetBeansProjects/dobleTripleRaiz/target/test-classes/.netbeans_automatic_build
+ create mode 100644 NetBeansProjects/NetBeansProjects/eureka/pom.xml
+ create mode 100644 NetBeansProjects/NetBeansProjects/eureka/src/main/java/lepolpelab/eureka/Eureka.java
+ create mode 100644 NetBeansProjects/NetBeansProjects/eureka/target/classes/.netbeans_automatic_build
+ create mode 100644 NetBeansProjects/NetBeansProjects/eureka/target/classes/lepolpelab/eureka/Eureka.class
+ create mode 100644 NetBeansProjects/NetBeansProjects/eureka/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+ create mode 100644 NetBeansProjects/NetBeansProjects/eureka/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+ create mode 100644 NetBeansProjects/NetBeansProjects/eureka/target/test-classes/.netbeans_automatic_build
+ create mode 100644 NetBeansProjects/NetBeansProjects/javaIntro/pom.xml
+ create mode 100644 NetBeansProjects/NetBeansProjects/javaIntro/src/main/java/lepolpelab/javaintro/JavaIntro.java
+ create mode 100644 NetBeansProjects/NetBeansProjects/javaIntro/target/classes/.netbeans_automatic_build
+ create mode 100644 NetBeansProjects/NetBeansProjects/javaIntro/target/classes/lepolpelab/javaintro/JavaIntro.class
+ create mode 100644 NetBeansProjects/NetBeansProjects/javaIntro/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+ create mode 100644 NetBeansProjects/NetBeansProjects/javaIntro/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+ create mode 100644 NetBeansProjects/NetBeansProjects/javaIntro/target/test-classes/.netbeans_automatic_build
+ create mode 100644 NetBeansProjects/NetBeansProjects/largo8/pom.xml
+ create mode 100644 NetBeansProjects/NetBeansProjects/largo8/src/main/java/lepolpelab/largo8/Largo8.java
+ create mode 100644 NetBeansProjects/NetBeansProjects/largo8/target/classes/.netbeans_automatic_build
+ create mode 100644 NetBeansProjects/NetBeansProjects/largo8/target/classes/lepolpelab/largo8/Largo8.class
+ create mode 100644 NetBeansProjects/NetBeansProjects/largo8/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+ create mode 100644 NetBeansProjects/NetBeansProjects/largo8/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+ create mode 100644 NetBeansProjects/NetBeansProjects/largo8/target/test-classes/.netbeans_automatic_build
+ create mode 100644 NetBeansProjects/NetBeansProjects/mayorDeDos/pom.xml
+ create mode 100644 NetBeansProjects/NetBeansProjects/mayorDeDos/src/main/java/lepolpelab/mayordedos/MayorDeDos.java
+ create mode 100644 NetBeansProjects/NetBeansProjects/mayorDeDos/target/classes/.netbeans_automatic_build
+ create mode 100644 NetBeansProjects/NetBeansProjects/mayorDeDos/target/classes/lepolpelab/mayordedos/MayorDeDos.class
+ create mode 100644 NetBeansProjects/NetBeansProjects/mayorDeDos/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+ create mode 100644 NetBeansProjects/NetBeansProjects/mayorDeDos/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+ create mode 100644 NetBeansProjects/NetBeansProjects/mayorDeDos/target/test-classes/.netbeans_automatic_build
+ create mode 100644 NetBeansProjects/NetBeansProjects/parOImpar/pom.xml
+ create mode 100644 NetBeansProjects/NetBeansProjects/parOImpar/src/main/java/lepolpelab/paroimpar/ParOImpar.java
+ create mode 100644 NetBeansProjects/NetBeansProjects/parOImpar/target/classes/.netbeans_automatic_build
+ create mode 100644 NetBeansProjects/NetBeansProjects/parOImpar/target/classes/lepolpelab/paroimpar/ParOImpar.class
+ create mode 100644 NetBeansProjects/NetBeansProjects/parOImpar/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+ create mode 100644 NetBeansProjects/NetBeansProjects/parOImpar/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+ create mode 100644 NetBeansProjects/NetBeansProjects/parOImpar/target/test-classes/.netbeans_automatic_build
+ create mode 100644 NetBeansProjects/NetBeansProjects/primeraLetraA/pom.xml
+ create mode 100644 NetBeansProjects/NetBeansProjects/primeraLetraA/src/main/java/lepolpelab/primeraletraa/PrimeraLetraA.java
+ create mode 100644 NetBeansProjects/NetBeansProjects/primeraLetraA/target/classes/.netbeans_automatic_build
+ create mode 100644 NetBeansProjects/NetBeansProjects/primeraLetraA/target/classes/lepolpelab/primeraletraa/PrimeraLetraA.class
+ create mode 100644 NetBeansProjects/NetBeansProjects/primeraLetraA/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+ create mode 100644 NetBeansProjects/NetBeansProjects/primeraLetraA/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+ create mode 100644 NetBeansProjects/NetBeansProjects/primeraLetraA/target/test-classes/.netbeans_automatic_build
+ create mode 100644 NetBeansProjects/NetBeansProjects/sumaDosNumeros/pom.xml
+ create mode 100644 NetBeansProjects/NetBeansProjects/sumaDosNumeros/src/main/java/lepolpelab/sumadosnumeros/SumaDosNumeros.java
+ create mode 100644 NetBeansProjects/NetBeansProjects/sumaDosNumeros/target/classes/.netbeans_automatic_build
+ create mode 100644 NetBeansProjects/NetBeansProjects/sumaDosNumeros/target/classes/lepolpelab/sumadosnumeros/SumaDosNumeros.class
+ create mode 100644 NetBeansProjects/NetBeansProjects/sumaDosNumeros/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+ create mode 100644 NetBeansProjects/NetBeansProjects/sumaDosNumeros/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+ create mode 100644 NetBeansProjects/NetBeansProjects/sumaDosNumeros/target/test-classes/.netbeans_automatic_build
+ create mode 100644 NetBeansProjects/NetBeansProjects/upperLowerFrase/pom.xml
+ create mode 100644 NetBeansProjects/NetBeansProjects/upperLowerFrase/src/main/java/lepolpelab/upperlowerfrase/UpperLowerFrase.java
+ create mode 100644 NetBeansProjects/NetBeansProjects/upperLowerFrase/target/classes/.netbeans_automatic_build
+ create mode 100644 NetBeansProjects/NetBeansProjects/upperLowerFrase/target/classes/lepolpelab/upperlowerfrase/UpperLowerFrase.class
+ create mode 100644 NetBeansProjects/NetBeansProjects/upperLowerFrase/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+ create mode 100644 NetBeansProjects/NetBeansProjects/upperLowerFrase/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+ create mode 100644 NetBeansProjects/NetBeansProjects/upperLowerFrase/target/test-classes/.netbeans_automatic_build
+usr@lepolpe-lab:~/git/egg/NetBeansProjects$ git status
+En la rama main
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que se será confirmado)
+	../.gitignore
+	notaEntrey0y10/
+
+no hay nada agregado al commit pero hay archivos sin seguimiento presentes (usa "git add" para hacerles seguimiento)
+usr@lepolpe-lab:~/git/egg/NetBeansProjects$ cd ..
+usr@lepolpe-lab:~/git/egg$ ls
+NetBeansProjects
+usr@lepolpe-lab:~/git/egg$ cd ..
+usr@lepolpe-lab:~/git$ ls
+egg  git_test  MiPrimerRepositorio  odin-recipes
+usr@lepolpe-lab:~/git$ cd ..
+usr@lepolpe-lab:~$ ls
+Descargas  Documentos  Escritorio  git  gthbtkn  Imágenes  Música  NetBeansProjects  Plantillas  Público  snap  Vídeos
+usr@lepolpe-lab:~$ cd NetBeansProjects/
+usr@lepolpe-lab:~/NetBeansProjects$ ls
+centiAFahren  dobleTripleRaiz  entre0y10  eureka  javaIntro  largo8  mayorDeDos  parOImpar  primeraLetraA  sumaDosNumeros  upperLowerFrase
+usr@lepolpe-lab:~/NetBeansProjects$ git init
+ayuda: Usando 'master' como el nombre de la rama inicial. Este nombre de rama predeterminado
+ayuda: está sujeto a cambios. Para configurar el nombre de la rama inicial para usar en todos
+ayuda: de sus nuevos repositorios, reprimiendo esta advertencia, llama a:
+ayuda: 
+ayuda: 	git config --global init.defaultBranch <nombre>
+ayuda: 
+ayuda: Los nombres comúnmente elegidos en lugar de 'master' son 'main', 'trunk' y
+ayuda: 'development'. Se puede cambiar el nombre de la rama recién creada mediante este comando:
+ayuda: 
+ayuda: 	git branch -m <nombre>
+Inicializado repositorio Git vacío en /home/usr/NetBeansProjects/.git/
+usr@lepolpe-lab:~/NetBeansProjects$ git status
+En la rama master
+
+No hay commits todavía
+
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que se será confirmado)
+	centiAFahren/
+	dobleTripleRaiz/
+	entre0y10/
+	eureka/
+	javaIntro/
+	largo8/
+	mayorDeDos/
+	parOImpar/
+	primeraLetraA/
+	sumaDosNumeros/
+	upperLowerFrase/
+
+no hay nada agregado al commit pero hay archivos sin seguimiento presentes (usa "git add" para hacerles seguimiento)
+usr@lepolpe-lab:~/NetBeansProjects$ git branch -m ntbns
+usr@lepolpe-lab:~/NetBeansProjects$ git status
+En la rama ntbns
+
+No hay commits todavía
+
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que se será confirmado)
+	centiAFahren/
+	dobleTripleRaiz/
+	entre0y10/
+	eureka/
+	javaIntro/
+	largo8/
+	mayorDeDos/
+	parOImpar/
+	primeraLetraA/
+	sumaDosNumeros/
+	upperLowerFrase/
+
+no hay nada agregado al commit pero hay archivos sin seguimiento presentes (usa "git add" para hacerles seguimiento)
+usr@lepolpe-lab:~/NetBeansProjects$ git add .
+usr@lepolpe-lab:~/NetBeansProjects$ git commit -m "se agrega una rama linkeada al directorio de trabajo NetBeansProjects"
+[ntbns (commit-raíz) e90f2d9] se agrega una rama linkeada al directorio de trabajo NetBeansProjects
+ 72 files changed, 439 insertions(+)
+ create mode 100644 centiAFahren/pom.xml
+ create mode 100644 centiAFahren/src/main/java/lepolpelab/centiafahren/CentiAFahren.java
+ create mode 100644 centiAFahren/target/classes/.netbeans_automatic_build
+ create mode 100644 centiAFahren/target/classes/lepolpelab/centiafahren/CentiAFahren.class
+ create mode 100644 centiAFahren/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+ create mode 100644 centiAFahren/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+ create mode 100644 centiAFahren/target/test-classes/.netbeans_automatic_build
+ create mode 100644 dobleTripleRaiz/pom.xml
+ create mode 100644 dobleTripleRaiz/src/main/java/lepolpelab/dobletripleraiz/DobleTripleRaiz.java
+ create mode 100644 dobleTripleRaiz/target/classes/.netbeans_automatic_build
+ create mode 100644 dobleTripleRaiz/target/classes/lepolpelab/dobletripleraiz/DobleTripleRaiz.class
+ create mode 100644 dobleTripleRaiz/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+ create mode 100644 dobleTripleRaiz/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+ create mode 100644 dobleTripleRaiz/target/test-classes/.netbeans_automatic_build
+ create mode 100644 entre0y10/pom.xml
+ create mode 100644 entre0y10/src/main/java/lepolpelab/entre0y10/Entre0y10.java
+ create mode 100644 eureka/pom.xml
+ create mode 100644 eureka/src/main/java/lepolpelab/eureka/Eureka.java
+ create mode 100644 eureka/target/classes/.netbeans_automatic_build
+ create mode 100644 eureka/target/classes/lepolpelab/eureka/Eureka.class
+ create mode 100644 eureka/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+ create mode 100644 eureka/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+ create mode 100644 eureka/target/test-classes/.netbeans_automatic_build
+ create mode 100644 javaIntro/pom.xml
+ create mode 100644 javaIntro/src/main/java/lepolpelab/javaintro/JavaIntro.java
+ create mode 100644 javaIntro/target/classes/.netbeans_automatic_build
+ create mode 100644 javaIntro/target/classes/lepolpelab/javaintro/JavaIntro.class
+ create mode 100644 javaIntro/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+ create mode 100644 javaIntro/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+ create mode 100644 javaIntro/target/test-classes/.netbeans_automatic_build
+ create mode 100644 largo8/pom.xml
+ create mode 100644 largo8/src/main/java/lepolpelab/largo8/Largo8.java
+ create mode 100644 largo8/target/classes/.netbeans_automatic_build
+ create mode 100644 largo8/target/classes/lepolpelab/largo8/Largo8.class
+ create mode 100644 largo8/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+ create mode 100644 largo8/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+ create mode 100644 largo8/target/test-classes/.netbeans_automatic_build
+ create mode 100644 mayorDeDos/pom.xml
+ create mode 100644 mayorDeDos/src/main/java/lepolpelab/mayordedos/MayorDeDos.java
+ create mode 100644 mayorDeDos/target/classes/.netbeans_automatic_build
+ create mode 100644 mayorDeDos/target/classes/lepolpelab/mayordedos/MayorDeDos.class
+ create mode 100644 mayorDeDos/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+ create mode 100644 mayorDeDos/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+ create mode 100644 mayorDeDos/target/test-classes/.netbeans_automatic_build
+ create mode 100644 parOImpar/pom.xml
+ create mode 100644 parOImpar/src/main/java/lepolpelab/paroimpar/ParOImpar.java
+ create mode 100644 parOImpar/target/classes/.netbeans_automatic_build
+ create mode 100644 parOImpar/target/classes/lepolpelab/paroimpar/ParOImpar.class
+ create mode 100644 parOImpar/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+ create mode 100644 parOImpar/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+ create mode 100644 parOImpar/target/test-classes/.netbeans_automatic_build
+ create mode 100644 primeraLetraA/pom.xml
+ create mode 100644 primeraLetraA/src/main/java/lepolpelab/primeraletraa/PrimeraLetraA.java
+ create mode 100644 primeraLetraA/target/classes/.netbeans_automatic_build
+ create mode 100644 primeraLetraA/target/classes/lepolpelab/primeraletraa/PrimeraLetraA.class
+ create mode 100644 primeraLetraA/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+ create mode 100644 primeraLetraA/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+ create mode 100644 primeraLetraA/target/test-classes/.netbeans_automatic_build
+ create mode 100644 sumaDosNumeros/pom.xml
+ create mode 100644 sumaDosNumeros/src/main/java/lepolpelab/sumadosnumeros/SumaDosNumeros.java
+ create mode 100644 sumaDosNumeros/target/classes/.netbeans_automatic_build
+ create mode 100644 sumaDosNumeros/target/classes/lepolpelab/sumadosnumeros/SumaDosNumeros.class
+ create mode 100644 sumaDosNumeros/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+ create mode 100644 sumaDosNumeros/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+ create mode 100644 sumaDosNumeros/target/test-classes/.netbeans_automatic_build
+ create mode 100644 upperLowerFrase/pom.xml
+ create mode 100644 upperLowerFrase/src/main/java/lepolpelab/upperlowerfrase/UpperLowerFrase.java
+ create mode 100644 upperLowerFrase/target/classes/.netbeans_automatic_build
+ create mode 100644 upperLowerFrase/target/classes/lepolpelab/upperlowerfrase/UpperLowerFrase.class
+ create mode 100644 upperLowerFrase/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+ create mode 100644 upperLowerFrase/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+ create mode 100644 upperLowerFrase/target/test-classes/.netbeans_automatic_build
+usr@lepolpe-lab:~/NetBeansProjects$ git push
+fatal: No se ha configurado un destino para el empuje.
+Puedes o especificar una URL desde la línea de comandos o configurar un repositorio remoto usando
+
+    git remote add <nombre> <url>
+
+y luego empujar al nombre del remoto
+
+    git push <nombre>
+
+usr@lepolpe-lab:~/NetBeansProjects$ git status
+En la rama ntbns
+nada para hacer commit, el árbol de trabajo está limpio
+usr@lepolpe-lab:~/NetBeansProjects$ git config --get user.name
+LehPolPe
+usr@lepolpe-lab:~/NetBeansProjects$ git status
+En la rama ntbns
+nada para hacer commit, el árbol de trabajo está limpio
+usr@lepolpe-lab:~/NetBeansProjects$ git push ntbns
+fatal: The current branch ntbns has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream ntbns ntbns
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+usr@lepolpe-lab:~/NetBeansProjects$ git push.autoSetupRemote
+git: 'push.autoSetupRemote' no es un comando de git. Mira 'git --help'.
+usr@lepolpe-lab:~/NetBeansProjects$ git push --push.autoSetupRemote
+error: opción `push.autoSetupRemote' desconocida
+uso: git push [<opciones>] [<repositorio> [<especificación-de-referencia>...]]
+
+    -v, --verbose         ser más verboso
+    -q, --quiet           ser más callado
+    --repo <repositorio>  repositorio
+    --all                 empujar todas las refs
+    --mirror              realizar mirror a todas las refs
+    -d, --delete          borrar refs
+    --tags                empujar tags (no puede ser usado con --all o --mirror)
+    -n, --dry-run         dry run (ejecución en seco)
+    --porcelain           output en formato de máquina
+    -f, --force           forzar actualizaciones
+    --force-with-lease[=<refname>:<expect>]
+                          requerir que el valor viejo de ref sea este valor
+    --force-if-includes   requerir que las actualizaciones remotas se integren localmente
+    --recurse-submodules (check|on-demand|no)
+                          controlar empuje recursivo de submódulos
+    --thin                usar empaquetado delgado
+    --receive-pack <receive-pack>
+                          programa de recepción de paquetes
+    --exec <receive-pack>
+                          programa de recepción de paquetes
+    -u, --set-upstream    configurar upstream para git pull/status
+    --progress            forzar el reporte de progreso
+    --prune               recortar refs eliminadas localmente
+    --no-verify           hacer un bypass al hook pre-push
+    --follow-tags         empujar tags faltantes pero relevantes
+    --signed[=(yes|no|if-asked)]
+                          Firmar con GPG el empuje
+    --atomic              solicitar transacción atómica en el lado remoto
+    -o, --push-option <específico-al-servidor>
+                          opción para trasmitir
+    -4, --ipv4            solo usar direcciones IPv4
+    -6, --ipv6            solo usar direcciones IPv6
+
+usr@lepolpe-lab:~/NetBeansProjects$ git status
+En la rama ntbns
+nada para hacer commit, el árbol de trabajo está limpio
+usr@lepolpe-lab:~/NetBeansProjects$ git push git@github.com:LehPolPe/ntbns.git
+fatal: The current branch ntbns has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream git@github.com:LehPolPe/ntbns.git ntbns
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+usr@lepolpe-lab:~/NetBeansProjects$ git push --set-upstream git@github.com:LehPolPe/ntbns.git
+fatal: The current branch ntbns has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream git@github.com:LehPolPe/ntbns.git ntbns
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+usr@lepolpe-lab:~/NetBeansProjects$ git push --set-upstream git@github.com:LehPolPe/ntbns.git ntbns
+Enumerando objetos: 202, listo.
+Contando objetos: 100% (202/202), listo.
+Compresión delta usando hasta 2 hilos
+Comprimiendo objetos: 100% (86/86), listo.
+Escribiendo objetos: 100% (202/202), 17.82 KiB | 829.00 KiB/s, listo.
+Total 202 (delta 34), reusados 0 (delta 0), pack-reusados 0
+remote: Resolving deltas: 100% (34/34), done.
+To github.com:LehPolPe/ntbns.git
+ * [new branch]      ntbns -> ntbns
+branch 'ntbns' set up to track 'git@github.com:LehPolPe/ntbns.git/ntbns'.
+usr@lepolpe-lab:~/NetBeansProjects$ 
